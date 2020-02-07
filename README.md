@@ -31,6 +31,10 @@ From 10AM that same day, all public buses, subways, ferries, long-distance buse 
 Up to noon, a total of 14 cities in Hubei provincee would be brought into the quarantine zone. 35 million people are concerned.
 
 #### 2020-02-04
-Huoshen Montain hospital accept the first patient
+Huoshen Montain Hospital accepted the first patient
+
+#### 2020-02-05
+Wuhan FireEye labortory
+FangCang Hospital
 
 

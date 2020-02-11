@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style>
+<!-- 必须，不要动 -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<!-- 移动端必须、PC端非响应式可以去掉 -->
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<!-- SEO用 -->
+    <meta name="keywords" content="卫生健康,湖北省卫生健康,湖北省卫生健康委,湖北省卫生健康委员会,湖北省卫生健康委员会门户
+网站,wjw.hubei.gov.cn">
+<meta name="description" content="卫生健康,湖北省卫生健康,湖北省卫生健康委,湖北省卫生健康委员会,湖北省卫生健康委员会门户网站,wjw.hubei.gov.cn">
+<meta name="SiteName" content="湖北省卫生健康委员会">
+<meta name="SiteDomain" content="http://wjw.hubei.gov.cn/">
+<meta name="SiteCode" content="4200000029">
+    <meta name="ColumnName" content="信息发布">
+    <meta name="ColumnDescription" content="信息发布">
+    <meta name="ColumnKeywords" content="信息发布">
+    <meta name="ColumnType" content="信息发布">
+<meta name="ArticleTitle" content="武汉市卫生健康委关于市民关心的几个问题的答复">
+<meta name="PubDate" content="2020-01-23 20:06">
+<meta name="ContentSource" content=" 武汉市卫生健康委员会">
+<meta name="Url" content="http://wjw.hubei.gov.cn/bmdt/ztzl/fkxxgzbdgrfyyq/xxfb/202001/t20200123_2014585.shtml">
+<title>武汉市卫生健康委关于市民关心的几个问题的答复 -湖北省卫生健康委员会</title>
+    <link rel="shortcut icon" href="http://wjw.hubei.gov.cn/material/images/ico.png">
+    <link type="text/css" rel="stylesheet" href="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/common.css">
+    <link type="text/css" rel="stylesheet" href="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/ui02.css">
+    <link type="text/css" rel="stylesheet" href="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/wjw.css">
+    <link href="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/video-js.css" rel="stylesheet">
+    <!--[if lt IE 9]><script r='m'>document.createElement("section")</script><![endif]--><script src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/videojs-ie8.js"></script>
+    <script src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/video.js"></script>
+
+    <!-- 兼容低版本IE -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://wjw.hubei.gov.cn/material/js/html5.js"></script>
+    <script type="text/javascript" src="http://wjw.hubei.gov.cn/material/js/respond.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/jquery_1_12_4.js"></script>
+    <script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/common.js"></script><script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/layer.js"></script><link rel="stylesheet" href="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/layer.css" id="layuicss-layer"><script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/jquery_SuperSlide.js"></script><script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/swiper.js"></script><script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/swiper_animate.js"></script><script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/jquery_scrolla.js"></script><script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/foreach.js"></script>
+<script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/Print.js"></script>
+
+<script src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/bsStatic.js" type="text/javascript" charset="utf-8"></script><script src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/bs-engine.js" type="text/javascript" charset="utf-8"></script><style type="text/css">a.bshareDiv,#bsPanel,#bsMorePanel,#bshareF{border:none;background:none;padding:0;margin:0;font:12px Helvetica,Calibri,Tahoma,Arial,宋体,sans-serif;line-height:14px;}#bsPanel div,#bsMorePanel div,#bshareF div{display:block;}.bsRlogo .bsPopupAwd,.bsRlogoSel .bsPopupAwd,.bsLogo .bsPopupAwd,.bsLogoSel .bsPopupAwd{line-height:16px !important;}a.bshareDiv div,#bsFloatTab div{*display:inline;zoom:1;display:inline-block;}a.bshareDiv img,a.bshareDiv div,a.bshareDiv span,a.bshareDiv a,#bshareF table,#bshareF tr,#bshareF td{text-decoration:none;background:none;margin:0;padding:0;border:none;line-height:1.2}a.bshareDiv span{display:inline;float:none;}div.buzzButton{cursor:pointer;font-weight:bold;}.buzzButton .shareCount a{color:#333}.bsStyle1 .shareCount a{color:#fff}span.bshareText{white-space:nowrap;}span.bshareText:hover{text-decoration:underline;}a.bshareDiv .bsPromo,div.bshare-custom .bsPromo{display:none;position:absolute;z-index:100;}a.bshareDiv .bsPromo.bsPromo1,div.bshare-custom .bsPromo.bsPromo1{width:51px;height:18px;top:-18px;left:0;line-height:16px;font-size:12px !important;font-weight:normal !important;color:#fff;text-align:center;background:url(http://static.bshare.cn/frame/images/bshare_box_sprite2.gif) no-repeat 0 -606px;}div.bshare-custom .bsPromo.bsPromo2{background:url(http://static.bshare.cn/frame/images/bshare_promo_sprite.gif) no-repeat;cursor:pointer;}</style><style type="text/css">.bsBox{display:none;z-index:100000001;font-size:12px;background:url(http://static.bshare.cn/frame/images//background-opaque-dark.gif) !important;padding:6px !important;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}.bsClose{_overflow:hidden;cursor:pointer;position:absolute;z-index:10000000;color:#666;font-weight:bold;font-family:Helvetica,Arial;font-size:14px;line-height:20px;}.bsTop{color:#666;background:#f2f2f2;height:24px;line-height:24px;border-bottom:1px solid #e8e8e8;}.bsTop span{float:left;}.bsFrameDiv,#bsMorePanel{border:none;background:#fff;}.bsReturn{float:right;*margin-right:20px;margin-right:36px;text-align:right;cursor:pointer;line-height:24px;color:#666;opacity:0.5;}#bsReturn:hover{text-decoration:underline;opacity:1;}</style><script src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/bsMore.js" type="text/javascript" charset="utf-8"></script><style type="text/css">div.bsClear{clear:both;height:0;line-height:0;overflow:hidden;font-size:0;}.bsSearchDiv{padding:5px 15px;background-color:#fafafa;}.bFind-wrapper-top{background:#fff;border-color:#ccc #aaa #aaa #ccc;border-style:solid;border-width:1px;height:16px;padding:4px;margin:0;}.bFind-wrapper-top input{padding:0 !important;border:none !important;box-shadow:none !important;line-height:16px !important;}.bFind-placeholder{background:url("http://static.bshare.cn/css/images/search-icon.gif") no-repeat;display:block;float:left;height:16px;width:16px;}.bFind{background:none;border:none;float:left;font-size:11px !important;height:16px !important;margin-left:3px;outline:none;padding:0;width:400px;}.bsPlatDiv{height:322px;background:#fff;overflow:auto;padding:0 15px;}#bsLogoList{display:block;list-style:none;overflow:hidden;margin:0;padding:0;}#bsLogoList li{float:left;display:inline-block;width:71px;text-align:center;font-size:12px;height:80px;margin:0 !important;}#bsLogoList .bsPlatIcon{cursor:pointer;display:block !important;text-align:center;}#bsLogoList .bsPlatImg{width:32px;height:32px;border:none !important;display:inline-block;}#bsLogoList .bsPlatImg:hover{-moz-border-radius:7px;-webkit-border-radius:7px;border-radius:7px;box-shadow:0 0 15px #a7a8ac;}#bsLogoList .bsPlatName{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;text-align:center;color:#333 !important;margin-top:2px;line-height:140%;*width:70px;}#bsLogoList .bsPromoM{text-align:center;}.bsFooterDiv{height:24px;line-height:24px;padding:0 15px;border-top:1px solid #e8e8e8;background:#f2f2f2;text-align:right;}a.bsLogoLink{color:#666;}.bsLogoLink:hover{text-decoration:underline;}.bsPromoM{background:url(http://static.bshare.cn/frame/images//bshare_box_sprite2.gif) no-repeat top left;}.bsNew,.bsHot,.bsRec,.bsAwd{background-position:0 -552px;width:19px;margin:5px auto 1px;line-height:16px;height:18px;font-size:12px;color:#fff;overflow:hidden;}.bsNew{background-position:0 -570px;}.bsRec{width:30px;background-position:0 -588px;}.bsAwd{background:url(http://static.bshare.cn/frame/images//promot/promote.gif) no-repeat;}</style><script src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/bshare_view.json" type="text/javascript" charset="utf-8"></script></head>
+
+<body>
+<!-- dom -->
+<div class="wrap">
+    <!-- ---------header  开始------------- -->
+    <div class="header">
+   <div class="ht">
+    <div class="inner clearfix">
+     <p class="fl">
+      <script type="text/javaScript">
+       var sysdate = new Date();
+    var year = sysdate.getFullYear();
+    var month = sysdate.getMonth();
+    var date = sysdate.getDate();
+    var day = sysdate.getDay();
+    var week = ['日', '一', '二', '三', '四', '五', '六'];
+    document.write(year + "年" + (month + 1) + "月" + date + "日 星期" + week[day]);
+ </script>2020年2月10日 星期一
+     </p>
+     <p class="fr"><a id="StranLink" href="javascript:StranBody()" name="StranLink" title="點擊以繁體中文方式瀏覽">繁體</a>|<a id="StranLink" href="" name="StranLink" title="">繁体</a>|<a id="login" style="cursor: pointer;" title="">登录</a>|<a id="zhuce" href="https://oauth.hubei.gov.cn:8443/hbyzw/zwfw/personInfo/personInfoReg.jsp?appCode=hbzfjyhpt" style="cursor: pointer;" title="">注册</a></p>
+    </div>
+   </div>
+   <div class="inner clearfix mb20">
+    <h1 class="fl nt"><a href="http://wjw.hubei.gov.cn/" style="width: 100%;" title="">湖北省卫生健康委员会</a></h1>
+    <div class="nav fr">
+     <ul>
+      <li id="index"><a href="http://wjw.hubei.gov.cn/" class="" title=""><i class="s1"></i><b>首  页</b></a></li>
+      <li id="2845"><a href="http://wjw.hubei.gov.cn/fbjd/" title=""><i class="s2"></i><b>发布解读</b></a></li>
+      <li id="2882"><a href="http://wjw.hubei.gov.cn/hdjl/" title=""><i class="s3"></i><b>互动交流</b></a></li>
+      <li><a href="http://zwfw.hubei.gov.cn/s/web/bszn/bmsy.html?department=11420000011043372A" target="_blank" title=""><i class="s4"></i><b>办事服务</b></a></li>
+
+<li id="2894"><a href="http://wjw.hubei.gov.cn/bmdt/" title="" class="current"><i class="s5"></i><b>部门动态</b></a></li>
+     </ul>
+    </div>
+    <div class="clear"></div>
+    <!-- 移动端菜单开始 -->
+    <div class="menu-btn"><span></span><span></span><span></span></div>
+    <div class="menu">
+     <p class="tc"><img src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/logo.png" alt=""></p>
+     <ul>
+        <li><a href="http://wjw.hubei.gov.cn/" title=""><i class="s1"></i><b>首页</b></a></li>
+        <li><a href="http://wjw.hubei.gov.cn/fbjd/" title=""><i class="s2"></i><b>发布解读</b></a></li>
+        <li><a href="http://wjw.hubei.gov.cn/hdjl/" title=""><i class="s3"></i><b>互动交流</b></a></li>
+        <li><a href="http://wjw.hubei.gov.cn/bsfw/" title=""><i class="s4"></i><b>办事服务</b></a></li>
+        <li><a href="http://wjw.hubei.gov.cn/bmdt/" title=""><i class="s5"></i><b>部门动态</b></a></li>
+     </ul>
+    </div>
+    <div class="mask"></div>
+    <!-- 移动端菜单结束 -->
+<div class="search">
+     <input type="text" maxlength="20" onclick="if(this.value=='请输入关键字'){this.value='';}" placeholder="请输入关键字" id="textfield">
+     <button onclick="chkSearch()"><span class="iconfont icon-jyh-search"></span>搜 索</button>
+   <!--   <p><strong>热门搜索： </strong><a href="">不忘初心 牢记使命</a><a href="">四好农村路</a><a href="">潜江小龙虾</a></p> -->
+    </div>
+  </div>  
+</div>
+   <!-- header 结束 -->
+<script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/eazy.js"></script>
+<script>
+function chkSearch(){
+	if($('#textfield').val() == '' || $('#textfield').val().length == 0){
+		alert('请输入关键字');
+		return false;
+	}
+var keywords = encodeURI($('#textfield').val());
+	$url = '/site/wjw/search.html?searchWord='+keywords+'&siteId=19&pageSize=10';
+	window.open($url,'_blank'); 
+}	
+    $('#textfield').on('keypress',function (event) {
+        if (event.keyCode === 13){
+            chkSearch();
+        }
+    });
+</script>
+    <!-- ---------header  结束------------- -->
+
+    <!-- content 开始 -->
+    <div class="content">
+        <!-- 当前位置 开始 -->
+
+        <!-- 当前位置 结束 -->
+        <div class="row" style="margin:0;">
+            <div class="mb20">
+                <div class="main">
+                    <div class="where mb20">当前位置：<a href="http://wjw.hubei.gov.cn/" target="_self" title="首页" class="CurrChnlCls">首页</a>&gt;<a href="http://wjw.hubei.gov.cn/bmdt/" target="_self" title="部门动态" class="CurrChnlCls">部门动态</a>&gt;<a href="http://wjw.hubei.gov.cn/bmdt/ztzl/" target="_self" title="专题专栏" class="CurrChnlCls">专题专栏</a>&gt;<a href="http://wjw.hubei.gov.cn/bmdt/ztzl/fkxxgzbdgrfyyq/" target="_self" title="防控新型冠状病毒感染肺炎疫情" class="CurrChnlCls">防控新型冠状病毒感染肺炎疫情</a>&gt;<a href="http://wjw.hubei.gov.cn/bmdt/ztzl/fkxxgzbdgrfyyq/xxfb/" target="_self" title="信息发布" class="CurrChnlCls">信息发布</a></div>
+                    <div class="article">
+
+                             <!-- 如果首页标题为空-->
+                        
+                        
+                        <h2>武汉市卫生健康委关于市民关心的几个问题的答复</h2>
+                            <!-- 如果副标题为空-->
+                        
+                        
+                        <div class="option clearfix"><div class="bshare-custom share"><div class="bsPromo bsPromo2"></div>    <div class="bsPromo bsPromo2"></div>    <a title="分享到新浪微博" class="bshare-sinaminiblog " href="javascript:void(0);"></a><a title="分享到微信" class="bshare-weixin" href="javascript:void(0);"></a><a title="分享到QQ空间" class="bshare-qzone" href="javascript:void(0);"></a></div>
+                            <h4>武汉市卫生健康委关于市民关心的几个问题的答复</h4>
+                            <div class="jfontsize"> <a id="jfontsize-p2" title="切换大字体" style="cursor: pointer;"><i></i></a> <a id="jfontsize-m2" title="切换小字体" style="cursor: pointer;"><i></i></a> <a id="jfontsize-d2" title="默认字体大小" style="cursor: pointer;"><i></i></a> </div>
+                            <div class="info">
+                                <span><i class="icon-clock"></i>2020-01-23 20:06</span><span class="hidden-xs"> | </span>
+                                <span class="source">
+<i class="icon-organization"></i>
+                                    
+                                    
+                                        武汉市卫生健康委员会
+                                    
+                                </span>
+<!-- 作者 开始 -->
+                                    
+                                    
+                                        <span class="hidden-xs hidden-sm"> | </span>
+                                        <span class="hidden-sm">
+                                            <i class="mdi mdi-account"></i>
+                                            宣传处
+                                        </span>
+                                    
+                                    <!-- 作者 结束 -->
+                            </div>
+                        </div>
+                        <div class="article-box" id="article-box">
+                            
+                                
+                            
+                            
+ 
+                            <p style="font-size: 16px;"></p><div class="view TRS_UEDITOR trs_paper_default trs_web trs_key4format" style="font-size: 16px;"><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">1、到发热门诊就诊的人特别多，留观床位十分紧张，要怎样调配医疗资源、加强救治力量来解决发热门诊留观治疗这一突出问题?</p><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">答:目前全市发热患者增多趋势明显，确实存在发热门诊就诊排长队、留观床位紧张的现象。为此，市指挥部紧急研究决定，征用相关医院作为发热患者定点诊疗医院。</p><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">已
+确定市汉口医院、市红十字会医院、市普爱医院西院、市七医院、市九医院、市武昌医院、市五医院等七家医院整体征用，其门诊部全部作为发热门诊集中接诊全市
+发热患者，并安排3000余张病床收治疑似和确诊病例。同时，全市二级以上综合医院仍须设置发热门诊，开展预检分诊和一般发热患者的诊疗，积极引导发热伴
+呼吸道症状的患者到全市发热患者定点诊疗医院。预计发热患者就诊紧张状况将有所缓解。</p><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">2、目前，武汉市采取了“7对7”包保制度，请问为什么要这样做?具体是怎么运作的?</p><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">答:
+为了加强7家发热患者定点诊疗医院的医疗服务能力，在全市选取综合实力强的部、省、市属医院(同济医院、协和医院、省人民医院、武大中南医院、市一医院、
+市中心医院、市三医院)对口支援7家发热患者定点诊疗医院。由支援医院分管院长临时担任对口定点诊疗医院院长，负责定点诊疗医院人、财、物管理，统筹调配
+双方医院资源，全力做好患者救治，现有人员隶属关系、行政级别不变。定点诊疗医院医护人员全部转入发热患者诊疗救治工作，力量不足时由支援医院调配充实。</p><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">3、有不少医院反映标本送检后几天没有结果，影响到快速诊断，请问是什么原因?下一步如何提高检测速度?</p><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">答:由于国家已将新型冠状病毒的肺炎纳入乙类传染病，采取甲类管理，对该类病原的样本检测按照高致病性病原微生物(第二类)进行管理，相关样本的检测、运输等必须符合生物安全管理的相关要求，病原相关实验活动应当在具备相应防护级别的生物安全实验室开展。</p><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">前
+期我们对疑似病例的样本检测流程是这样的:首诊医院通过规范的预检分诊、结合临床检查、实验室检查和胸部影像检查，经专家组会诊后确认疑似病例并采样，由
+辖区疾控中心将样本转运到市疾控中心，市疾控中心转运到省疾控中心进行核酸检测，每天可检测样本200多份。(1月16日之前我省没有试剂盒，还需要送到
+国家指定的检测机构进行病毒分离和核酸检测)，预计从采样开始到结果返回，当前约需要2天左右的时间( 
+1月16日之前，样本需送到北京国家指定的检测机构，结果返回约需要3—5天)。</p><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">为
+适应当前防控形势需要，提高检测速度，经请示上级有关部门同意，从1月22日昨天开始，我市已指定各定点救治医院、发热定点诊疗医院的对口帮扶医院以及市
+疾控中心等具备相应防护级别的生物安全实验室开展相关样本的病原核酸检测工作(第一批共10家机构)，预计全部运行起来每天可检测样本近2000份。为
+此，我市计划紧急调运3万人份试剂盒发放到指定检测机构，目前已下发6000人份。</p><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">4、管理好新型冠状病毒感染的肺炎密切接触者，是控制该疾病传播的有效手段，请问武汉市是如何做好新型冠状病毒感染的肺炎密切接触者管理的?密切接触者中有多少人被确诊为新型冠状病毒感染的肺炎?</p><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">答:我市在疫情发生一开始，就对密切接触者的判定、交办、跟踪、处置等进行严格规范和组织实施。具体做法概括为:</p><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">(1)全纳入，全覆盖。凡是与观察、疑似或确诊病例同工作、同学习、同生活以及其他近距离接触的人员，凡是对病例实施医疗、护理的医务人员等，均作为密切接触者进行追踪和排查，尽最大可能不遗漏1人。</p><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">(2)属地化，网格化。主要以现居住地为依据，及时、准确地将密切接触者交由居住辖区进行管理。各区将人员名单分配到网格管理小组，确保接受规范化的医学观察。</p><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">(3)
+五个一，三包一。对每名密切接触者均提供一本防控知识手册、一副口罩、一支体温计、一张体温检测表、一支记录笔。由社区群干、社区医生、社区网格员组成医
+学观察小组，每日入户(每日至少1次)，每天监测，及时报送信息。观察期(14天)满，经评估通过后予以解除医学观察。</p><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">(4)及时报，及时治。当密切接触者出现发热(37.3℃及以上)、咳嗽等异常状况时，立即上报、逐级上报，迅即调配救护车将其转运至定点医院救治。</p><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">截至1月22日24时，当日新增密切接触者人数260人，累计追踪密切接触者1441人，已解除医学观察779人，尚在接受医学观察662人。密接者出现发热异常症状者46人，排除人数10人，待排人数35人，疑似病例1人。</p><p style="box-sizing: border-box; padding: 10px 35px; line-height: 45px; font-size: 21px; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; font-family: 仿宋_GB2312; text-align: left;">（来源：武汉市卫生健康委员会）</p></div><p style="font-size: 16px;"></p>
+                            <p id="annex" style="display: none; font-size: 22px;">附件:</p>
+                            <ul id="list" style="font-size: 16px;">
+                                
+                            </ul>
+
+ 
+                        </div>
+
+<div class="p15 tc no-print">   
+<span class="btn btn-default" style="display: none;">
+<i class="icon-eye text-blue"></i> 已阅 </span> 
+<span class="btn btn-default" onclick="print();">
+<i class="mdi mdi-shredder text-blue"></i> 打印 </span>
+ <span class="btn btn-default" onclick="window.close();">
+<i class="mdi mdi-close-circle-outline  text-blue"></i> 关闭 </span> 
+</div>
+                    </div>
+                </div>
+
+   <!--文档-->
+                <div class="side-box" style="display: none;">
+                    <div class="side mb20">
+                        <h3 class="t3 read"><i class="icon-star mr10 vm text-blue"></i><span>相关文档</span></h3>
+
+                        <ul class="list-t relnew">
+                            
+
+                        </ul>
+
+                    </div>
+                </div>
+<!--文档结束-->
+<!--链接-->
+<div class="side-box" style="display: none;">
+      <div class="side mb20">
+                          <h3 class="t3  recurl"><i class="icon-star mr10 vm text-blue"></i><span>关联链接</span></h3>
+                 <ul class="list-t  endix">
+                        
+
+                    </ul>
+      </div>
+    </div>
+<!--链接结束-->
+            </div>
+        </div>
+        <!-- content 结束-->
+    </div>
+    <!-- ---------footer  开始------------- -->
+    <div class="footer">
+ <!-- links 开始 -->
+ <div class="links">
+   <ul class="row">
+     <li class="col-md-3"><a title="">各省、市卫生委员会</a>
+     <ul>
+
+<li>
+<a href="http://www.xjhfpc.gov.cn/" target="_blank" title="新疆自治区">新疆自治区</a>
+</li>
+ 
+<li>
+<a href="http://www.hebwsjs.gov.cn/index.do?templet=index" target="_blank" title="河北省">河北省</a>
+</li>
+ 
+<li>
+<a href="http://wsjk.gansu.gov.cn/" target="_blank" title="甘肃省">甘肃省</a>
+</li>
+ 
+<li>
+<a href="http://sxwjw.shaanxi.gov.cn/" target="_blank" title="陕西省">陕西省</a>
+</li>
+ 
+<li>
+<a href="http://ynswsjkw.yn.gov.cn/wjwWebsite/web/index" target="_blank" title="云南省">云南省</a>
+</li>
+ 
+<li>
+<a href="http://www.gzhfpc.gov.cn/" target="_blank" title="贵州省">贵州省</a>
+</li>
+ 
+<li>
+<a href="http://wsjkw.tccxfw.com/" target="_blank" title="四川省">四川省</a>
+</li>
+ 
+<li>
+<a href="http://wsjkw.cq.gov.cn/" target="_blank" title="重庆市">重庆市</a>
+</li>
+ 
+<li>
+<a href="http://wsjkw.gd.gov.cn/" target="_blank" title="广东省">广东省</a>
+</li>
+ 
+<li>
+<a href="http://wsjkw.nx.gov.cn/" target="_blank" title="宁夏自治区">宁夏自治区</a>
+</li>
+ 
+<li>
+<a href="http://www.hnwsjsw.gov.cn/" target="_blank" title="河南省">河南省</a>
+</li>
+ 
+<li>
+<a href="http://wsjkw.shandong.gov.cn/" target="_blank" title="山东省">山东省</a>
+</li>
+ 
+<li>
+<a href="http://hc.jiangxi.gov.cn/" target="_blank" title="江西省">江西省</a>
+</li>
+ 
+<li>
+<a href="http://wjw.fujian.gov.cn/" target="_blank" title="福建省">福建省</a>
+</li>
+ 
+<li>
+<a href="http://wjw.ah.gov.cn/" target="_blank" title="安徽省">安徽省</a>
+</li>
+ 
+<li>
+<a href="http://www.gxws.gov.cn/" target="_blank" title="广西自治区">广西自治区</a>
+</li>
+ 
+<li>
+<a href="http://www.zjwjw.gov.cn/" target="_blank" title="浙江省">浙江省</a>
+</li>
+ 
+<li>
+<a href="http://wjw.jiangsu.gov.cn/" target="_blank" title="江苏省">江苏省</a>
+</li>
+ 
+<li>
+<a href="http://wsjkw.sh.gov.cn/" target="_blank" title="上海市">上海市</a>
+</li>
+ 
+<li>
+<a href="http://wsjkw.jl.gov.cn/" target="_blank" title="吉林省">吉林省</a>
+</li>
+ 
+<li>
+<a href="http://wjw.nmg.gov.cn/" target="_blank" title="内蒙古自治区">内蒙古自治区</a>
+</li>
+ 
+<li>
+<a href="http://wsjk.ln.gov.cn/" target="_blank" title="辽宁省">辽宁省</a>
+</li>
+ 
+<li>
+<a href="http://wjw.shanxi.gov.cn/" target="_blank" title="山西省">山西省</a>
+</li>
+ 
+<li>
+<a href="http://www.hebwsjs.gov.cn/index.do?templet=index" target="_blank" title="河北省">河北省</a>
+</li>
+ 
+<li>
+<a href="http://wsjk.tj.gov.cn/" target="_blank" title="天津市">天津市</a>
+</li>
+ 
+<li>
+<a href="https://wjw.beijing.gov.cn/" target="_blank" title="北京市">北京市</a>
+</li>
+ 
+      </ul>
+     </li>
+  <li class="col-md-3"><a title="">市州卫生健康委</a>
+      <ul>
+
+<li>
+<a href="http://wjw.wuhan.gov.cn/" target="_blank" title="武 汉">武 汉</a>
+</li>
+ 
+<li>
+<a href="http://wjw.huangshi.gov.cn/" target="_blank" title="黄 石">黄 石</a>
+</li>
+ 
+<li>
+<a href="http://wjw.shiyan.gov.cn/" target="_blank" title="十 堰">十 堰</a>
+</li>
+ 
+<li>
+<a href="http://wjw.yichang.gov.cn/" target="_blank" title="宜 昌">宜 昌</a>
+</li>
+ 
+<li>
+<a href="http://wjw.xiangyang.gov.cn/" target="_blank" title="襄 阳">襄 阳</a>
+</li>
+ 
+<li>
+<a href="http://wjw.ezhou.gov.cn/" target="_blank" title="鄂 州">鄂 州</a>
+</li>
+ 
+<li>
+<a href="http://wjw.jingmen.gov.cn/" target="_blank" title="荆 门">荆 门</a>
+</li>
+ 
+<li>
+<a href="http://wjw.xiaogan.gov.cn/" target="_blank" title="孝 感">孝 感</a>
+</li>
+ 
+<li>
+<a href="http://wjw.jingzhou.gov.cn/" target="_blank" title="荆 州">荆 州</a>
+</li>
+ 
+<li>
+<a href="http://wjw.hg.gov.cn/" target="_blank" title="黄 冈">黄 冈</a>
+</li>
+ 
+<li>
+<a href="http://wjw.xianning.gov.cn/" target="_blank" title="咸 宁">咸 宁</a>
+</li>
+ 
+<li>
+<a href="http://wjw.suizhou.gov.cn/" target="_blank" title="随 州">随 州</a>
+</li>
+ 
+<li>
+<a href="http://wjw.enshi.gov.cn/" target="_blank" title="恩 施">恩 施</a>
+</li>
+ 
+<li>
+<a href="http://wjw.xiantao.gov.cn/" target="_blank" title="仙 桃">仙 桃</a>
+</li>
+ 
+<li>
+<a href="http://www.hbqj.gov.cn/wsjs/" target="_blank" title="潜 江">潜 江</a>
+</li>
+ 
+      </ul>
+     </li>
+  <li class="col-md-3"><a title="">部省属医疗卫生机构</a>
+      <ul>
+
+<li>
+<a href="http://www.hb3rm.com/" target="_blank" title="湖北省第三人民医院（湖北省中山医院）">湖北省第三人民医院（湖北省中山医院）</a>
+</li>
+ 
+<li>
+<a href="http://www.tjh.com.cn/" target="_blank" title="同济医院">同济医院</a>
+</li>
+ 
+<li>
+<a href="http://www.whuh.com/" target="_blank" title="协和医院">协和医院</a>
+</li>
+ 
+<li>
+<a href="http://www.rmhospital.com/" target="_blank" title="湖北省人民医院">湖北省人民医院</a>
+</li>
+ 
+<li>
+<a href="http://www.znhospital.cn/" target="_blank" title="中南医院">中南医院</a>
+</li>
+ 
+<li>
+<a href="http://www.liyuanhospital.com/" target="_blank" title="梨园医院">梨园医院</a>
+</li>
+ 
+<li>
+<a href="http://www.hbch.com.cn/" target="_blank" title="湖北省肿瘤医院">湖北省肿瘤医院</a>
+</li>
+ 
+<li>
+<a href="http://www.hbfy.com/" target="_blank" title="湖北省妇幼保健院">湖北省妇幼保健院</a>
+</li>
+ 
+<li>
+<a href="http://www.hbszyy.com.cn/" target="_blank" title="湖北省直机关医院">湖北省直机关医院</a>
+</li>
+ 
+<li>
+<a href="http://www.hbhtcm.com/" target="_blank" title="湖北省中医院">湖北省中医院</a>
+</li>
+ 
+<li>
+<a href="http://www.wkdty.com/" target="_blank" title="武汉科技大学附属天佑医院">武汉科技大学附属天佑医院</a>
+</li>
+ 
+<li>
+<a href="http://www.wahh.com.cn/" target="_blank" title="武汉亚洲心脏病医院">武汉亚洲心脏病医院</a>
+</li>
+ 
+<li>
+<a href="http://www.hbwsjd.gov.cn/" target="_blank" title="湖北省卫生计生委综合监督局">湖北省卫生计生委综合监督局</a>
+</li>
+ 
+      </ul>
+     </li>
+  <li class="col-md-3"><a title="">子网链接</a>
+      <ul>
+
+<li>
+<a href="http://www.hbccl.cn/" target="_blank" title="湖北省临床检验中心">湖北省临床检验中心</a>
+</li>
+ 
+<li>
+<a href="http://www.hbwsjd.gov.cn/" target="_blank" title="湖北省卫生计生委综合监督局">湖北省卫生计生委综合监督局</a>
+</li>
+ 
+      </ul>
+     </li>
+ <li class="col-md-2"><a class="no-icon" href="http://www.nhc.gov.cn/" title="">国家卫生健康委</a></li> 
+   </ul>
+  </div>
+ <!-- links 结束 -->
+ <!-- copyright 开始 -->
+  <div class="copyright tc">
+   <p><span>主办单位：湖北省卫生健康委员会</span><span>技术支持：湖北省卫生健康委员会信息中心</span><span> <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011102000831" title=""><img src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/footer_icp.png">鄂公网安备42011102000831号</a></span></p>
+   <p><span>单位地址：湖北省武汉市洪山区卓刀泉北路39号</span><span>邮编：430079</span><span>鄂ICP备14001705号-1</span><a href="http://wjw.hubei.gov.cn/fzlm/wzdt/" target="_blank" title="">网站地图</a> </p>
+<p class="handle"><span>政府网站标识码：4200000029</span><span>联系电话：027-87576368</span><span><script id="_trs_ta_js" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/ta.js" async="async" defer="defer"></script></span></p>
+<div class="gov"><a href="http://bszs.conac.cn/sitename?method=show&amp;id=0C309016B9240699E053012819AC93CC" target="_blank" title=""><img src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/red.png" alt=""></a></div>
+     <div class="jc"><a href="http://www.gov.cn/c125533/jbxxk.htm" target="_blank" title=""><img src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/jiucuo.png" alt=""></a></div>
+  </div>
+  <!-- copyright 结束 --> 
+
+  <div id="backtop" class="backtop" style="display: none;"></div></div>
+<link type="text/css" rel="stylesheet" href="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/wltz.css">
+<script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/bootstrap.js"></script>
+<script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/wltz.js"></script>
+<script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/ssoAjax.js"></script>
+<script type="text/javascript">document.write('<script id="trsRobotEntranceId" data="username=wjw&baseUrl=http://jyh.hubei.gov.cn/trs-robot/" src="http://jyh.hubei.gov.cn/trs-robot//intelligentQA/entrance.js?v='+Math.random()+'"></' + 'script>');</script><script id="trsRobotEntranceId" data="username=wjw&amp;baseUrl=http://jyh.hubei.gov.cn/trs-robot/" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/entrance.js"></script>
+<!--此js为手机端修改外链弹框提示大小-->
+<!--<script type="text/javascript" src="http://wjw.hubei.gov.cn/material/js/wltzhtml5.js"></script>-->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="height:165px;">
+    <div class="modal-header">
+        <button type="button" class="bootstrap-close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">&nbsp;</h3>
+    </div>
+    <div class="modal-body">
+        <p>您访问的链接即将离开“<span id="modalDomainName"></span>”门户网站 是否继续？</p>
+        <input id="modalOuterURL" type="hidden">
+    </div>
+    <div class="modal-footer">
+        <button class="bootstrap-btn bootstrap-btn-default" data-dismiss="modal" aria-hidden="true">放弃</button>
+        <button class="bootstrap-btn bootstrap-btn-danger" onclick="toRedirect()">继续访问</button>
+    </div>
+</div> 
+   <!-- footer 结束 -->
+    <!-- ---------footer 结束------------- -->
+    <!-- dom 结束 -->
+    <!-- js -->
+    <!-- 字号设置功能 -->
+    <script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/jquery_jfontsize.js"></script>
+    <script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/jstorage.js"></script>
+    <!-- 组图，依赖于superslide -->
+    <script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/photos.js"></script>
+
+    <script>
+        //Dom option
+        $(document).ready(function() {
+var list = $(".img li").length;    //定义获取相关图片的数量
+if(list<2){    //如果相关图片的数量小于2
+ $(".photos").remove();
+}
+
+  (function () {
+            let source = $.trim($('.icon-organization').parent().text());
+            let author = $.trim($('.mdi-account').parent().text());
+            if (source == author){
+                $('.mdi-account').parent().hide().siblings('.hidden-xs.hidden-sm').hide();
+            }
+        })();
+//导航高亮
+            $("#2894").find("a").addClass("current");
+            $("#index").find("a").removeClass("current");
+
+            //操作条
+            $('.article .option h4').text($('.article h2').text());
+
+            //操作条跟随
+            function ff() {
+                var st = $(document).scrollTop(),
+                    gt = $('.article-box').offset().top;
+                st > gt ? $(".option").addClass('fixed') : $(".option").removeClass('fixed');
+            }
+            $(window).bind("load scroll resize", ff);
+
+          //字体控制
+     $('.article-box *,.article-box table').jfontsize({
+         btnMinusClasseId: '#jfontsize-m2',
+         btnDefaultClasseId: '#jfontsize-d2',
+         btnPlusClasseId: '#jfontsize-p2',
+         btnMinusMaxHits: 1,
+         btnPlusMaxHits: 5,
+         sizeChange: 2
+     });
+//表格自适应
+            $('.article-box table').removeAttr('width').addClass('table table-bordered').wrap('<div class="table-responsive"></div>');
+        });
+    </script>
+ <!--分享开始--> 
+<script type="text/javascript">
+$(".article .option").prepend('<div class="bshare-custom share">' +
+        '    <div class="bsPromo bsPromo2"></div>' +
+        '    <a title="分享到新浪微博" class="bshare-sinaminiblog " href="javascript:void(0);"></a><a title="分享到微信" class="bshare-weixin"' +
+        '        href="javascript:void(0);"></a>' +
+        '<a title="分享到QQ空间" class="bshare-qzone" href="javascript:void(0);"></a></div>')
+
+</script>
+
+<script type="text/javascript" charset="utf-8" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/buttonLite.js"></script>
+<script type="text/javascript" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/bshareC0.html"></script>
+<script>
+   //控制页面打印范围
+function print(){
+ $.print(".article");
+ }
+</script>
+               
+                        <script type="text/javascript">
+                          var relnew= $(".relnew");
+
+var   endix=$(".endix")
+    if(!relnew.has('li').length){
+        $(".read").parent().parent().hide();
+    }
+ if(!endix.has('li').length){
+        $(".recurl").parent().parent().hide();
+    }
+                                var annex = $("#annex");
+                                var list = $("#list");
+
+                                if(!list.has('li').length){
+                                    annex.hide();
+                                }
+
+                            </script>
+
+</div><div id="trsRobotMsgBox" style="display: block; position: fixed; z-index: 2147483583; background-repeat: no-repeat; background-color: rgb(64, 158, 255); background-image: url(&quot;http://jyh.hubei.gov.cn/trs-robot//intelligentQA/images/icon/show-btn.png&quot;); box-shadow: rgba(15, 66, 76, 0.25) 0px 0px 14px 0px; width: 60px; height: 60px; border-radius: 50%; right: 60px; bottom: 10px;"><div id="trsRobotBoxHint" style="display: none; position: fixed; background-color: rgb(64, 158, 255); color: rgb(255, 255, 255); right: 140px; bottom: 20px; padding: 5px 10px;">咨询智能客服</div></div><iframe id="trsRobotIframe" src="%E6%AD%A6%E6%B1%89%E5%B8%82%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%85%B3%E4%BA%8E%E5%B8%82%E6%B0%91%E5%85%B3%E5%BF%83%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E7%AD%94%E5%A4%8D%20-%E6%B9%96%E5%8C%97%E7%9C%81%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E5%A7%94%E5%91%98%E4%BC%9A_files/index.html" style="display: none; position: fixed; width: 360px; height: 540px; overflow: hidden; border: 0px none; border-radius: 5px 5px 0px 0px; z-index: 2147483647; box-shadow: rgba(15, 66, 76, 0.25) 0px 0px 24px 0px; background-position: 18px -58px; right: 50px; bottom: 80px;"></iframe><div id="bsBox" class="bsBox"><div class="bsClose">X</div><div class="bsTop"><div class="bsReturn">选择其他平台 &gt;&gt;</div><span style="margin-left:15px;">分享到</span><span class="bsPlatName"></span></div><div class="bsFrameDiv"><iframe class="bShareFrame" name="bsFrame95" scrolling="no" allowtransparency="true" frameborder="0"></iframe></div><div id="bsMorePanel" style="display: none;"></div></div></body></html>

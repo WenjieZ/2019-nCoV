@@ -1,5 +1,5 @@
 # 2019-nCoV
-2019年－2020年新型冠状病毒肺炎（武汉肺炎）
+2019年－2020年新型冠状病毒肺炎（COVID-19）
 
 #### 2019-12-08
 The first known case of an infected patient in Wuhan, a stall operator from the Huanan Seafood Market. 
@@ -17,7 +17,7 @@ Huanan seafood market closed
 59 cases of **virus** pneumonia
 
 #### 2020-01-11
-41 cases of **2019-nCoV** pneumonia
+41 cases of **COVID-19** pneumonia
 
 #### 2020-01-16
 41 cases (including two deaths) have been confirmed in Wuhan

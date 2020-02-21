@@ -5,11 +5,10 @@ import plotly.express as px
 import plotly.io as pio
 from plotly.subplots import make_subplots
 
-from model import SIR, Epidemic
-from law import Poi
+from .model import SIR, Epidemic
+from .law import Poi
 
-__all__ = ['InferSIR'
-          ]
+__all__ = ['InferSIR']
 
 
 def loglikely(epidemic, sample, law):

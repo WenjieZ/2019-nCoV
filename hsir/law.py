@@ -1,10 +1,7 @@
 from abc import ABCMeta, abstractmethod
 import numpy as np
 
-__all__ = ['Law',
-           'Bin',
-           'Poi'
-          ]
+__all__ = ['Law', 'Bin', 'Poi']
 
 
 class Law(metaclass=ABCMeta):

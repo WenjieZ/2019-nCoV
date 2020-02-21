@@ -4,11 +4,7 @@ import plotly.express as px
 import plotly.io as pio
 from plotly.subplots import make_subplots
 
-__all__ = ['Region',
-           'SIR',
-           'Epidemic',
-           'Sample'
-          ]
+__all__ = ['Region', 'SIR', 'Epidemic', 'Sample']
 
 
 class Region:

@@ -40,17 +40,16 @@ class Sample:
     
 
 class Confirmed:
-    def __init__(self, epidemic, ts, sigma=0.1, seed=None):
+    def __init__(self, epidemic, ts, law, seed=None):
         if seed is not None:
             np.random.seed(seed)
         
         c = np.zeros_like(ts)
         for i, t in enumerate(ts):
-            c[i] = epidemic.Q[t] * (1 + sigma*np.random.randn())
-            
+            c[i] = law.sample(epidemic.Q[t], 1)
+
         self.t = ts
         self.c = c
-        self._sigma = sigma
         
     def __repr__(self):
         return " t: {} \n c: {}".format(self.t, self.c)

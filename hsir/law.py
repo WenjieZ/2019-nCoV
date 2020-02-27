@@ -1,7 +1,7 @@
 from abc import ABCMeta, abstractmethod
 import numpy as np
 
-__all__ = ['Law', 'Bin', 'Poi']
+__all__ = ['Law', 'Bin', 'Poi', 'Gau']
 
 
 class Law(metaclass=ABCMeta):
@@ -17,9 +17,9 @@ class Law(metaclass=ABCMeta):
    
     @staticmethod
     def likelihood(n, d, k):
-        return np.exp(loglikely(cls, n, d, k))
+        return np.exp(loglikely(n, d, k))
 
-    
+
 class Bin(Law):
     def sample(n, d):
         return np.random.binomial(n, d)
@@ -30,7 +30,15 @@ class Bin(Law):
        
 class Poi(Law):
     def sample(n, d):
-        return np.random.poisson(n * d)
+        return np.random.poisson(n*d)
+
+    def loglikely(n, d, k):
+        return k*np.log(n*d) - n*d - np.sum(np.log(np.arange(k)+1))
+
+
+class Gau(Law):
+    def sample(n, d=1):
+        return n * (1 + 0.1*np.random.randn())
     
     def loglikely(n, d, k):
-        return k*np.log(n*d) - n*d
+        return -50 * np.log(k/n)**2

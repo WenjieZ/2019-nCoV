@@ -62,35 +62,47 @@ class SIRQ:
         fig.add_scatter(x=np.arange(T+1), y=epidemic.R.astype(int), name="Removed", hovertemplate="%{y}")
         fig.add_scatter(x=np.arange(T+1), y=epidemic.Q.astype(int), name="Quarantined", hovertemplate="%{y}")
         return fig  
-    
 
-def loglikely(epidemic, confirmed, sample, law):
-    ms = sample.m
-    ns = sample.n
-    ds = epidemic.I[sample.t] / ms
-    ks = sample.positive
-    ll = sum(law.loglikely(n, d, k) for n, d, k in zip(ns, ds, ks))
-    qs = epidemic.Q[confirmed.t]
-    cs = confirmed.c
-    ll += sum(-np.log(c/q)**2 for q, c in zip(qs, cs))
+
+def loglikely(epidemic, sample, law_s, confirmed, law_c, weight_c=1):
+    ll = 0
+
+    if sample is not None:
+        ms = sample.m
+        ns = sample.n
+        ds = epidemic.I[sample.t] / ms
+        ks = sample.positive
+        ll = sum(law_s.loglikely(n, d, k) for n, d, k in zip(ns, ds, ks))
+
+    if confirmed is not None:
+        qs = epidemic.Q[confirmed.t]
+        cs = confirmed.c
+        ll += weight_c * sum(law_c.loglikely(n, 1, k) for n, k in zip(qs, cs))
+
     return ll
 
 
-def likelihood(epidemic, confirmed, sample, law):
-    return np.exp(loglikely(epidemic, confirmed, sample, law))
+def likelihood(epidemic, sample, law_s, confirmed, law_c, weight_c=1):
+    return np.exp(loglikely(epidemic, sample, law_s, confirmed, law_c, weight_c))
 
 
 class InferSIRQ():
-    def __init__(self, law=Poi, algo="map"):
-        self.law = law
+    def __init__(self, law_s=Bin, law_c=Poi, algo="map", weight_c=1):
+        self.law_s = law_s
+        self.law_c = law_c
         self.algo = algo
+        self.weight_c = weight_c
         
     def __str__(self):
         return "β={}, γ={}, θ={}, loglikely={}".format(self.beta, self.gamma, self.theta, self.loglikely)
     
-    def plot(self, beta, region, confirmed, sample, law=None):
-        if law is None:
-            law = self.law
+    def plot(self, beta, region, sample, confirmed, law_s=None, law_c=None, weight_c=None):
+        if law_s is None:
+            law_s = self.law_s
+        if law_c is None:
+            law_c = self.law_c
+        if weight_c is None:
+            weight_c = self.weight_c
 
         x, y = np.logspace(-2, -0.3, 50), np.logspace(-2, -0.3, 50)
         z = np.zeros((len(y), len(x)))
@@ -98,7 +110,7 @@ class InferSIRQ():
             for j in range(len(x)):
                 dynamic = SIRQ(beta, x[j], y[i])
                 epidemic = dynamic.estimate(region, max(confirmed.t[-1], sample.t[-1]))
-                z[i, j] = loglikely(epidemic, confirmed, sample, law) 
+                z[i, j] = loglikely(epidemic, sample, law_s, confirmed, law_c, weight_c) 
 
         fig = go.Figure(data=go.Contour(z=np.log(np.max(z)-z+1), x=x, y=y, showscale=False, name='log(-loglikely)'))
         fig.update_layout(
@@ -110,10 +122,14 @@ class InferSIRQ():
         fig.update_yaxes(type="log")
         return fig
     
-    def plot_3d(self, region, confirmed, sample, law=None):
-        if law is None:
-            law = self.law
-
+    def plot_3d(self, region, sample, confirmed, law_s=None, law_c=None, weight_c=None):
+        if law_s is None:
+            law_s = self.law_s
+        if law_c is None:
+            law_c = self.law_c
+        if weight_c is None:
+            weight_c = self.weight_c
+            
         a, b, c = np.logspace(-2, 0, 20), np.logspace(-2, -0.3, 15), np.logspace(-2, -0.3, 15)
 #        d = np.zeros((len(a), len(b), len(c)))
 #        for i in range(len(a)):
@@ -137,7 +153,7 @@ class InferSIRQ():
                     z[i] = theta
                     dynamic = SIRQ(beta, gamma, theta)
                     epidemic = dynamic.estimate(region, max(confirmed.t[-1], sample.t[-1]))
-                    d[i] = loglikely(epidemic, confirmed, sample, law) 
+                    d[i] = loglikely(epidemic, sample, law_s, confirmed, law_c, weight_c) 
                     i += 1
         
         fig = px.scatter_3d(x=x, y=y, z=z, color=np.log(np.max(d)-d+1), labels='log(-loglikely)',
@@ -149,36 +165,48 @@ class InferSIRQ():
         )
         return fig
 
-    def fit(self, region, confirmed, sample, law=None, algo=None, **kvarg):
-        if law is None:
-            law = self.law
+    def fit(self, region, sample, confirmed, law_s=None, law_c=None, weight_c=None, algo=None, **kvarg):
+        if law_s is None:
+            law_s = self.law_s
+        if law_c is None:
+            law_c = self.law_c
+        if weight_c is None:
+            weight_c = self.weight_c
         if algo is None:
             algo = self.algo
             
         if algo == "map":
-            self.fit_beta_gamma_map(region, confirmed, sample, law, **kvarg)
+            self.fit_beta_gamma_map(region, sample, confirmed, law_s, law_c, weight_c, **kvarg)
         elif algo == "mcmc":
-            self.fit_beta_gamma_mh(region, confirmed, sample, law, **kvarg)   
+            self.fit_beta_gamma_mh(region, sample, confirmed, law_s, law_c, weight_c, **kvarg)   
             
-    def fit_beta_gamma_map(self, region, confirmed, sample, law=None, **kvarg):
-        if law is None:
-            law = self.law
+    def fit_beta_gamma_map(self, region, sample, confirmed, law_s=None, law_c=None, weight_c=None, **kvarg):
+        if law_s is None:
+            law_s = self.law_s
+        if law_c is None:
+            law_c = self.law_c
+        if weight_c is None:
+            weight_c = self.weight_c            
             
         def func(x):
             dynamic = SIRQ(*x)
             epidemic = dynamic.estimate(region, max(confirmed.t[-1], sample.t[-1]))
-            return -loglikely(epidemic, confirmed, sample, law)
+            return -loglikely(epidemic, sample, law_s, confirmed, law_c, weight_c)
         
         res = minimize(func, (0.5, 0.25, 0.25), method='nelder-mead', options={'xatol': 1e-8, 'disp': True})
         self.beta, self.gamma, self.theta = res.x
         self.loglikely = -res.fun
-        fig = self.plot(self.beta, region, confirmed, sample, law)
+        fig = self.plot(self.beta, region, sample, confirmed, law_s, law_c, weight_c)
         fig.add_scatter(x=[self.gamma], y=[self.theta], name='optimum')
         fig.show()
         
-    def fit_beta_gamma_mh(self, region, confirmed, sample, law=None, method='naive', **kvarg):
-        if law is None:
-            law = self.law
+    def fit_beta_gamma_mh(self, region, sample, confirmed, law_s=None, law_c=None, weight_c=None, method='naive', **kvarg):
+        if law_s is None:
+            law_s = self.law_s
+        if law_c is None:
+            law_c = self.law_c
+        if weight_c is None:
+            weight_c = self.weight_c 
         
         if 'width' not in kvarg:
             kvarg['width'] = 0.1
@@ -186,19 +214,20 @@ class InferSIRQ():
         def func(x):
             dynamic = SIRQ(*x)
             epidemic = dynamic.estimate(region, max(confirmed.t[-1], sample.t[-1]))
-            return likelihood(epidemic, confirmed, sample, law)
+            like = likelihood(epidemic, sample, law_s, confirmed, law_c, weight_c)
+            return like
         
         def func2(x):
             dynamic = SIRQ(*np.power(10, x))
             epidemic = dynamic.estimate(region, max(confirmed.t[-1], sample.t[-1]))
-            return likelihood(epidemic, confirmed, sample, law) * np.prod(10**x)
+            return likelihood(epidemic, sample, law_s, confirmed, law_c, weight_c) * np.prod(10**x)
             
         if method == 'naive':
-            res, walker = mh([0.5, 0.25, 0.25], func, np.array([[0.01, 1], [0.01, 1], [0.01, 1]]), **kvarg)
+            res, walker = mh([0.5, 0.1, 0.1], func, np.array([[0.01, 1], [0.01, 1], [0.01, 1]]), **kvarg)
         elif method == 'mirror':
-            res, walker = mh([0.5, 0.25, 0.25], func, np.array([[0.01, 1], [0.01, 1], [0.01, 1]]), ascdes=(np.log, np.exp), **kvarg)
+            res, walker = mh([0.5, 0.1, 0.1], func, np.array([[0.01, 1], [0.01, 1], [0.01, 1]]), ascdes=(np.log, np.exp), **kvarg)
         elif method == 'repar':
-            res, walker = mh([-1., -1., -1.], func2, np.array([[-2, 0], [-2, 0], [-2, 0]]), **kvarg)
+            res, walker = mh([-0.1, -1., -1.], func2, np.array([[-2, 0], [-2, 0], [-2, 0]]), **kvarg)
             res = np.power(10, res)
             walker = np.power(10, walker)
 

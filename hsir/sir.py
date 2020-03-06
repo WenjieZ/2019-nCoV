@@ -130,32 +130,31 @@ class InferSIR():
     def fit_beta_gamma_mh(self, region, sample, law=None, method='naive', **kvarg):
         if law is None:
             law = self.law
-        
-        if 'width' not in kvarg:
-            kvarg['width'] = 0.1
-        
+               
         def func(x):
             dynamic = SIR(*x)
             epidemic = dynamic.estimate(region, sample.t[-1])
             return likelihood(epidemic, sample, law)
         
         def func2(x):
-            dynamic = SIR(*np.power(10, x))
+            dynamic = SIR(*np.exp(x))
             epidemic = dynamic.estimate(region, sample.t[-1])
-            return likelihood(epidemic, sample, law) * np.prod(10**x)
+            return likelihood(epidemic, sample, law) * np.prod(np.exp(x))
             
         if method == 'naive':
-            res, walker = mh([0.5, 0.5], func, np.array([[0.01, 1], [0.01, 1]]), **kvarg)
+            x, walker, like = mh([0.5, 0.5], func, [[0.01, 1], [0.01, 1]], **kvarg)
         elif method == 'mirror':
-            res, walker = mh([0.5, 0.5], func, np.array([[0.01, 1], [0.01, 1]]), ascdes=(np.log, np.exp), **kvarg)
+            x, walker, like = mh([0.5, 0.5], func, [[0.01, 1], [0.01, 1]], ascdes=(np.log, np.exp), **kvarg)
         elif method == 'repar':
-            res, walker = mh([-1., -1.], func2, np.array([[-2, 0], [-2, 0]]), **kvarg)
-            res = np.power(10, res)
-            walker = np.power(10, walker)
+            x, walker, like = mh(np.log([0.5, 0.5]), func2, np.log([[0.01, 1], [0.01, 1]]), **kvarg)
+            x = np.exp(x)
+            walker = np.exp(walker)
+            like /= np.prod(walker, axis=1)
 
-        self.beta, self.gamma = res
-        self.loglikely = np.log(func(res))
+        self.beta, self.gamma = x
+        self.loglikely = np.log(func(x))
         self.walker = walker
+        self.like = like
 
         fig = self.plot(region, sample, law)
         fig.add_scatter(x=self.walker[:, 0], y=self.walker[:, 1], mode="markers+lines")

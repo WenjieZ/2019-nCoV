@@ -7,10 +7,11 @@ import plotly.io as pio
 from plotly.subplots import make_subplots
 
 
-__all__ = ['Region', 'Sample', 'Confirmed']
+__all__ = ['Region', 'Epidemic', 'Sample', 'Confirmed']
 
 
 Region = namedtuple('Region', 'S I R Q')
+Epidemic = namedtuple('Epidemic', 'S I R Q')
 
 
 class Sample:

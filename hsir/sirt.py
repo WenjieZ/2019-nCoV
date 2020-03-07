@@ -13,7 +13,7 @@ from .norm import variation1, variation2, elastic_net
 from .empirical import Region, Epidemic
 
 
-__all__ = ['SIRt', 'InferSIRt']
+__all__ = ['SIRt', 'InferSIRt', 'JumpProcess']
 
 
 class JumpProcess:

@@ -135,7 +135,7 @@ class InferSIRt:
         self.dynamic = None
         self.loglikely = None
         
-    def __str__(self):
+    def __repr__(self):
         fig = go.Figure()
         fig.add_scatter(x=np.arange(len(self.beta)), y=self.beta, line_shape='hv', name='β', hovertemplate="%{y}")
         fig.update_yaxes(type="log")

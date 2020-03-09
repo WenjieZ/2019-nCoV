@@ -176,11 +176,11 @@ class InferSIRQ():
             algo = self.algo
             
         if algo == "map":
-            self.fit_beta_gamma_map(region, sample, confirmed, law_s, law_c, weight_c, **kvarg)
+            self.fit_beta_gamma_theta_map(region, sample, confirmed, law_s, law_c, weight_c, **kvarg)
         elif algo == "mcmc":
-            self.fit_beta_gamma_mh(region, sample, confirmed, law_s, law_c, weight_c, **kvarg)   
+            self.fit_beta_gamma_theta_mh(region, sample, confirmed, law_s, law_c, weight_c, **kvarg)   
             
-    def fit_beta_gamma_map(self, region, sample, confirmed, law_s=None, law_c=None, weight_c=None, **kvarg):
+    def fit_beta_gamma_theta_map(self, region, sample, confirmed, law_s=None, law_c=None, weight_c=None, **kvarg):
         if law_s is None:
             law_s = self.law_s
         if law_c is None:
@@ -200,7 +200,7 @@ class InferSIRQ():
         fig.add_scatter(x=[self.gamma], y=[self.theta], name='optimum')
         fig.show()
         
-    def fit_beta_gamma_mh(self, region, sample, confirmed, law_s=None, law_c=None, weight_c=None, method='naive', **kvarg):
+    def fit_beta_gamma_theta_mh(self, region, sample, confirmed, law_s=None, law_c=None, weight_c=None, method='naive', **kvarg):
         if law_s is None:
             law_s = self.law_s
         if law_c is None:

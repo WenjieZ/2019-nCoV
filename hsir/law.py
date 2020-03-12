@@ -26,19 +26,19 @@ class Bin(Law):
     
     def loglikely(n, d, k):
         return k*np.log(d) + (n-k)*np.log(1-d)
- 
-       
+
+
 class Poi(Law):
     def sample(n, d):
         return np.random.poisson(n*d)
-
+    
     def loglikely(n, d, k):
-        return k*np.log(n*d) - n*d - np.sum(np.log(np.arange(k)+1))
-
+        return k*np.log(n*d) - n*d + k - k*np.log(1+k) # - np.sum(np.log(np.arange(k)+1))
+    
 
 class Gau(Law):
     def sample(n, d=1):
         return n * (1 + 0.1*np.random.randn())
     
     def loglikely(n, d, k):
-        return -50 * np.log(k/n)**2
+        return -50 * np.log(k/n)**2 

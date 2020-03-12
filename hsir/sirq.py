@@ -1,4 +1,3 @@
-from collections import namedtuple
 import numpy as np
 
 import plotly.graph_objects as go 
@@ -9,6 +8,8 @@ from plotly.subplots import make_subplots
 from scipy.optimize import minimize
 from easymh import mh
 
+from .utils import Id
+from .empirical import Region, Epidemic
 from .law import Bin, Poi
 
 
@@ -24,8 +25,11 @@ class SIRQ:
     def __repr__(self):
         return "β={}, γ={}, θ={}".format(self.beta, self.gamma, self.theta)
 
-    def r0(self):
-        return self.beta / (self.gamma + self.theta)
+    def r0(self, control=False):
+        if control:
+            return self.beta / (self.gamma + self.theta)
+        else:
+            return self.beta / self.gamma
 
     def estimate(self, region, T):
         S = np.zeros(T+1)
@@ -37,16 +41,15 @@ class SIRQ:
         I[0] = region.I
         R[0] = region.R
         Q[0] = region.Q
-        N = S[0] + I[0] + R[0] + Q[0]
 
         for t in range(T):
-            a, b, c = self.beta*S[t]*I[t]/N, self.gamma*I[t], self.theta*I[t]
+            M = S[0] + I[0] + R[0] + Q[0]
+            a, b, c = self.beta*S[t]*I[t]/M, self.gamma*I[t], self.theta*I[t]
             S[t+1] = S[t] - a
             I[t+1] = I[t] + a - b - c
             R[t+1] = R[t] + b
             Q[t+1] = Q[t] + c
         
-        Epidemic = namedtuple('Epidemic', 'S I R Q')
         return Epidemic(S, I, R, Q)
 
     def predict(self, region, T):
@@ -55,8 +58,8 @@ class SIRQ:
     @staticmethod
     def plot(epidemic):
         fig = go.Figure()
-        fig.update_layout(margin=dict(b=0, l=0, r=0, t=25))
-        T = len(epidemic.S) - 1
+        fig.update_layout(margin=dict(b=0, l=0, r=150, t=25))
+        T = epidemic.S.size - 1
         fig.add_scatter(x=np.arange(T+1), y=epidemic.S.astype(int), name="Susceptible", hovertemplate="%{y}")
         fig.add_scatter(x=np.arange(T+1), y=epidemic.I.astype(int), name="Infectious", hovertemplate="%{y}")
         fig.add_scatter(x=np.arange(T+1), y=epidemic.R.astype(int), name="Removed", hovertemplate="%{y}")
@@ -64,7 +67,7 @@ class SIRQ:
         return fig  
 
 
-def loglikely(epidemic, sample, law_s, confirmed, law_c, weight_c=1):
+def loglikely(epidemic, sample, confirmed, law_s, law_c, weight_c=1):
     ll = 0
 
     if sample is not None:
@@ -72,37 +75,38 @@ def loglikely(epidemic, sample, law_s, confirmed, law_c, weight_c=1):
         ns = sample.n
         ds = epidemic.I[sample.t] / ms
         ks = sample.positive
-        ll = sum(law_s.loglikely(n, d, k) for n, d, k in zip(ns, ds, ks))
+        ll = sum(law_s.loglikely(n, d, k) for n, d, k in zip(ns, ds, ks)) / len(ns)
 
     if confirmed is not None:
         qs = epidemic.Q[confirmed.t]
         cs = confirmed.c
-        ll += weight_c * sum(law_c.loglikely(n, 1, k) for n, k in zip(qs, cs))
+        ll += weight_c * sum(law_c.loglikely(n, 1, k) for n, k in zip(qs, cs)) / len(qs)
 
     return ll
 
 
-def likelihood(epidemic, sample, law_s, confirmed, law_c, weight_c=1):
-    return np.exp(loglikely(epidemic, sample, law_s, confirmed, law_c, weight_c))
+def likelihood(epidemic, sample, confirmed, law_s, law_c, weight_c=1):
+    return np.exp(loglikely(epidemic, sample, confirmed, law_s, law_c, weight_c))
 
 
 class InferSIRQ():
-    def __init__(self, law_s=Bin, law_c=Poi, algo="map", weight_c=1):
+    def __init__(self, dynamic=SIRQ(0.5, 0.1, 0.1), law_s=Bin, law_c=Poi, weight_c=1, 
+                 solver=minimize, maxiter=None, **options):
+        self.dynamic = dynamic
         self.law_s = law_s
         self.law_c = law_c
-        self.algo = algo
         self.weight_c = weight_c
-        
-    def __str__(self):
-        return "β={}, γ={}, θ={}, loglikely={}".format(self.beta, self.gamma, self.theta, self.loglikely)
-    
-    def plot(self, beta, region, sample, confirmed, law_s=None, law_c=None, weight_c=None):
-        if law_s is None:
-            law_s = self.law_s
-        if law_c is None:
-            law_c = self.law_c
-        if weight_c is None:
-            weight_c = self.weight_c
+        self.solver = solver
+        if solver == minimize and 'method' not in options:
+            options['method'] = 'nelder-mead'
+        options['options'] = {'maxiter': 100000} if maxiter is None else {'maxiter': maxiter}
+        options['options']['disp'] = True
+        self.options = options
+
+    def plot(self, beta, region, sample, confirmed):
+        law_s = self.law_s
+        law_c = self.law_c
+        weight_c = self.weight_c
 
         x, y = np.logspace(-2, -0.3, 50), np.logspace(-2, -0.3, 50)
         z = np.zeros((len(y), len(x)))
@@ -110,7 +114,7 @@ class InferSIRQ():
             for j in range(len(x)):
                 dynamic = SIRQ(beta, x[j], y[i])
                 epidemic = dynamic.estimate(region, max(confirmed.t[-1], sample.t[-1]))
-                z[i, j] = loglikely(epidemic, sample, law_s, confirmed, law_c, weight_c) 
+                z[i, j] = loglikely(epidemic, sample, confirmed, law_s, law_c, weight_c) 
 
         fig = go.Figure(data=go.Contour(z=np.log(np.max(z)-z+1), x=x, y=y, showscale=False, name='log(-loglikely)'))
         fig.update_layout(
@@ -122,13 +126,10 @@ class InferSIRQ():
         fig.update_yaxes(type="log")
         return fig
     
-    def plot_3d(self, region, sample, confirmed, law_s=None, law_c=None, weight_c=None):
-        if law_s is None:
-            law_s = self.law_s
-        if law_c is None:
-            law_c = self.law_c
-        if weight_c is None:
-            weight_c = self.weight_c
+    def plot_3d(self, region, sample, confirmed):
+        law_s = self.law_s
+        law_c = self.law_c
+        weight_c = self.weight_c
             
         a, b, c = np.logspace(-2, 0, 20), np.logspace(-2, -0.3, 15), np.logspace(-2, -0.3, 15)
 #        d = np.zeros((len(a), len(b), len(c)))
@@ -153,7 +154,7 @@ class InferSIRQ():
                     z[i] = theta
                     dynamic = SIRQ(beta, gamma, theta)
                     epidemic = dynamic.estimate(region, max(confirmed.t[-1], sample.t[-1]))
-                    d[i] = loglikely(epidemic, sample, law_s, confirmed, law_c, weight_c) 
+                    d[i] = loglikely(epidemic, sample, confirmed, law_s, law_c, weight_c) 
                     i += 1
         
         fig = px.scatter_3d(x=x, y=y, z=z, color=np.log(np.max(d)-d+1), labels='log(-loglikely)',
@@ -165,21 +166,20 @@ class InferSIRQ():
         )
         return fig
 
-    def fit(self, region, sample, confirmed, law_s=None, law_c=None, weight_c=None, algo=None, **kvarg):
-        if law_s is None:
-            law_s = self.law_s
-        if law_c is None:
-            law_c = self.law_c
-        if weight_c is None:
-            weight_c = self.weight_c
-        if algo is None:
-            algo = self.algo
-            
-        if algo == "map":
-            self.fit_beta_gamma_theta_map(region, sample, confirmed, law_s, law_c, weight_c, **kvarg)
-        elif algo == "mcmc":
-            self.fit_beta_gamma_theta_mh(region, sample, confirmed, law_s, law_c, weight_c, **kvarg)   
-            
+    def fit(self, region, sample, confirmed, viz=False):
+        def fun(x):
+            dynamic = SIRQ(*x)
+            epidemic = dynamic.estimate(region, max(confirmed.t[-1], sample.t[-1]))
+            return -loglikely(epidemic, sample, confirmed, self.law_s, self.law_c, self.weight_c)
+
+        self.res = self.solver(fun, (self.dynamic.beta, self.dynamic.gamma, self.dynamic.theta), **self.options)
+        self.dynamic = SIRQ(*self.res.x)
+        if viz:
+            fig = self.plot(self.dynamic.beta, region, sample, confirmed)
+            fig.add_scatter(x=[self.dynamic.gamma], y=[self.dynamic.theta], name='optimum')
+            fig.show()            
+        return self
+
     def fit_beta_gamma_theta_map(self, region, sample, confirmed, law_s=None, law_c=None, weight_c=None, **kvarg):
         if law_s is None:
             law_s = self.law_s

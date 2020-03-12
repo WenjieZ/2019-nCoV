@@ -1,4 +1,3 @@
-from collections import namedtuple
 import numpy as np
 
 import plotly.graph_objects as go 
@@ -9,6 +8,8 @@ from plotly.subplots import make_subplots
 from scipy.optimize import minimize
 from easymh import mh
 
+from .utils import Id
+from .empirical import Region, Epidemic
 from .law import Bin, Poi
 
 
@@ -33,16 +34,15 @@ class SIR:
         S[0] = region.S
         I[0] = region.I
         R[0] = region.R
-        N = S[0] + I[0] + R[0]
         
         for t in range(T):
-            a, b = self.beta*S[t]*I[t]/N, self.gamma*I[t]
+            M = S[0] + I[0] + R[0]
+            a, b = self.beta*S[t]*I[t]/M, self.gamma*I[t]
             S[t+1] = S[t] - a
             I[t+1] = I[t] + a - b
             R[t+1] = R[t] + b        
         
-        Epidemic = namedtuple('Epidemic', 'S I R')
-        return Epidemic(S, I, R)
+        return Epidemic(S, I, R, None)
 
     def predict(self, region, T):
         return self.estimate(region, T)
@@ -50,8 +50,8 @@ class SIR:
     @staticmethod
     def plot(epidemic):
         fig = go.Figure()
-        fig.update_layout(margin=dict(b=0, l=0, r=0, t=25))
-        T = len(epidemic.S) - 1
+        fig.update_layout(margin=dict(b=0, l=0, r=150, t=25))
+        T = epidemic.S.size - 1
         fig.add_scatter(x=np.arange(T+1), y=epidemic.S.astype(int), name="Susceptible", hovertemplate="%{y}")
         fig.add_scatter(x=np.arange(T+1), y=epidemic.I.astype(int), name="Infectious", hovertemplate="%{y}")
         fig.add_scatter(x=np.arange(T+1), y=epidemic.R.astype(int), name="Removed", hovertemplate="%{y}")
@@ -63,7 +63,7 @@ def loglikely(epidemic, sample, law):
     ns = sample.n
     ds = epidemic.I[sample.t] / ms
     ks = sample.positive
-    return sum(law.loglikely(n, d, k) for n, d, k in zip(ns, ds, ks))
+    return sum(law.loglikely(n, d, k) for n, d, k in zip(ns, ds, ks)) / len(ns)
 
 
 def likelihood(epidemic, sample, law):
@@ -71,16 +71,18 @@ def likelihood(epidemic, sample, law):
 
 
 class InferSIR():
-    def __init__(self, law=Poi, algo="map"):
+    def __init__(self, dynamic=SIR(0.5, 0.1), law=Poi, solver=minimize, maxiter=None, **options):
+        self.dynamic = dynamic
         self.law = law
-        self.algo = algo
+        self.solver = solver
+        if solver == minimize and 'method' not in options:
+            options['method'] = 'nelder-mead'
+        options['options'] = {'maxiter': 100000} if maxiter is None else {'maxiter': maxiter}
+        options['options']['disp'] = True
+        self.options = options
         
-    def __str__(self):
-        return "β={}, γ={}, loglikely={}".format(self.beta, self.gamma, self.loglikely)
-    
-    def plot(self, region, sample, law=None):
-        if law is None:
-            law = self.law
+    def plot(self, region, sample):
+        law = self.law
 
         x, y = np.logspace(-2, 0, 50), np.logspace(-2, 0, 50)
         z = np.zeros((len(y), len(x)))
@@ -100,16 +102,19 @@ class InferSIR():
         fig.update_yaxes(type="log")
         return fig
 
-    def fit(self, region, sample, law=None, algo=None, **kvarg):
-        if law is None:
-            law = self.law
-        if algo is None:
-            algo = self.algo
-            
-        if algo == "map":
-            self.fit_beta_gamma_map(region, sample, law, **kvarg)
-        elif algo == "mcmc":
-            self.fit_beta_gamma_mh(region, sample, law, **kvarg)   
+    def fit(self, region, sample, viz=False):
+        def fun(x):
+            dynamic = SIR(*x)
+            epidemic = dynamic.estimate(region, sample.t[-1])
+            return -loglikely(epidemic, sample, self.law)
+
+        self.res = self.solver(fun, (self.dynamic.beta, self.dynamic.gamma), **self.options)
+        self.dynamic = SIR(*self.res.x)
+        if viz:
+            fig = self.plot(region, sample)
+            fig.add_scatter(x=[self.dynamic.beta], y=[self.dynamic.gamma], name='optimum')
+            fig.show()            
+        return self
             
     def fit_beta_gamma_map(self, region, sample, law=None, **kvarg):
         if law is None:
@@ -159,9 +164,4 @@ class InferSIR():
         fig = self.plot(region, sample, law)
         fig.add_scatter(x=self.walker[:, 0], y=self.walker[:, 1], mode="markers+lines")
         fig.show()  
-        
-    def r0(self, biased=True, B=200):
-        if biased:
-            return self.beta / self.gamma
-        else:
-            return np.mean(self.walker[B:, 0] / self.walker[B:, 1])
+

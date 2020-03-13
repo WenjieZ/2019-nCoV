@@ -102,8 +102,8 @@ def loglikely(epidemic, sample=None, resisted=None, confirmed=None,
         ds = epidemic.I[sample.t] / ms
         ks = sample.positive
         ll = sum(law_s.loglikely(n, d, k) for n, d, k in zip(ns, ds, ks)) / len(ns)
-    if verbose:
-        print('sample:', ll)
+        if verbose:
+            print('sample:', ll)
 
     if resisted is not None:
         ms = resisted.m
@@ -111,15 +111,15 @@ def loglikely(epidemic, sample=None, resisted=None, confirmed=None,
         ds = epidemic.R[resisted.t] / ms
         ks = resisted.positive
         ll += weight_r * sum(law_r.loglikely(n, d, k) for n, d, k in zip(ns, ds, ks)) / len(ns)
-    if verbose:
-        print('resisted:', ll)
+        if verbose:
+            print('resisted:', ll)
         
     if confirmed is not None:
         qs = epidemic.Q[confirmed.t]
         cs = confirmed.c
         ll += weight_c * sum(law_c.loglikely(n, 1, k) for n, k in zip(qs, cs)) / len(qs)
-    if verbose:
-        print('confirmed:', ll)
+        if verbose:
+            print('confirmed:', ll)
 
     return ll
 

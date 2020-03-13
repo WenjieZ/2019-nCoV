@@ -183,7 +183,7 @@ class InferSIRQt:
                 T = max(T, confirmed.t[-1])
             x0 = 0.2 * np.ones(1 + 2 * T)
         else:
-            x0 = np.hstack((self.dynamic.gamma, self.dynamic.beta, self.dynamic.theta))
+            x0 = np.hstack((self.dynamic.gamma[0], self.dynamic.beta, self.dynamic.theta))
         self.res = self.solver(fun, asc(x0), **self.options)
         x = des(self.res.x)
         d = len(x) // 2 + 1

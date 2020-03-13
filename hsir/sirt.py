@@ -148,9 +148,9 @@ class InferSIRt:
                 T = max(T, sample.t[-1])
             if resisted is not None:
                 T = max(T, resisted.t[-1])
-            x0 = 0.2 * np.ones(1 + 2 * T)
+            x0 = 0.2 * np.ones(1 + T)
         else:
-            x0 = np.hstack((self.dynamic.gamma, self.dynamic.beta))
+            x0 = np.hstack((self.dynamic.gamma[0], self.dynamic.beta))
         self.res = self.solver(fun, x0, **self.options)
         self.dynamic = SIRt(self.res.x[1:], self.res.x[0])
         return self

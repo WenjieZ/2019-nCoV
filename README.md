@@ -1,11 +1,12 @@
-# 2019-nCoV
-2019年－2020年新型冠状病毒肺炎（COVID-19）
+# COVID-19 Timeline
 
 #### 2019-12-08
 The first known case of an infected patient in Wuhan, a stall operator from the Huanan Seafood Market. 
 
 #### 2019-12-31 
-27 cases of **pneumonia**
+- WHO China Country Office was informed of cases of pneumonia of unknown aetiology in Wuhan City, Hubei Province,
+China
+- 27 cases of **pneumonia**
 
 #### 2020-01-01
 Huanan seafood market closed
@@ -30,11 +31,18 @@ From 10AM that same day, all public buses, subways, ferries, long-distance buse 
 #### 2020-01-24
 Up to noon, a total of 14 cities in Hubei provincee would be brought into the quarantine zone. 35 million people are concerned.
 
+#### 2020-01-30
+The COVID-19 epidemic was declared a Public Health Emergency of International Concern (PHEIC) by WHO
+
 #### 2020-02-04
 Huoshen Montain Hospital accepted the first patient
 
 #### 2020-02-05
 Wuhan FireEye labortory
+
 FangCang Hospital
 
+
+## Statistics
+- Wuhan International Airport has a catchment population of 19 million individuals
 

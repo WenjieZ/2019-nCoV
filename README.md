@@ -42,6 +42,11 @@ Wuhan FireEye labortory
 
 FangCang Hospital
 
+#### 2020-03-11
+the Director-General of WHO characterised the COVID-19 situation as a pandemic
+
+#### 2020-03-12
+The USA has suspended all travel from 26 European countries
 
 ## Statistics
 - Wuhan International Airport has a catchment population of 19 million individuals

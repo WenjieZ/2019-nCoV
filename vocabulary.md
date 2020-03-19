@@ -34,3 +34,101 @@
 [uncountable] (medical)
 - ​pain in a muscle
 
+#### elderly 
+*adjective*
+- (of people) used as a polite word for ‘old’
+- ​**the elderly** *noun* [plural] people who are old
+
+#### absenteeism 
+[uncountable]
+- ​the fact of being frequently away from work or school, especially without good reasons
+
+#### presenteeism
+[uncountable] *(British English)*
+- ​the practice of spending more time at your work than you need to according to your contract, in order to appear to be working hard
+
+#### morbidity
+[uncountable]
+- *(medical)* the fact of having a particular disease; the number of people who have a particular disease
+- a strong interest in sad or unpleasant things, especially disease or death; the fact of being about these things
+
+#### virulence
+[uncountable]
+- the degree to which a disease or poison is dangerous or harmful and quick to have an effect 
+- *(formal)* the fact of showing strong negative and bitter feelings
+
+#### strain
+type of plant/animal/disease
+- [countable] a particular type of plant or animal, or of a disease caused by bacteria, etc.
+
+#### triage
+[uncountable]
+- (in a hospital) the process of deciding how seriously ill or injured a person is, so that the most serious cases can be treated first
+
+#### pathogen
+- a thing that causes disease
+
+#### stave off
+- to prevent something bad from affecting you for a period of time; to delay something
+
+#### swab
+- a piece of soft material used by a doctor, nurse, etc. for cleaning wounds or taking a sample from somebody’s body for testing
+- an act of taking a sample from somebody’s body, with a swab
+
+#### containment
+[uncountable] (formal)
+- the act of keeping something under control so that it cannot spread in a harmful way
+- the act of keeping another country’s power within limits so that it does not become too powerful
+
+#### abet
+- **abet somebody** to help or encourage somebody to do something wrong
+
+#### bastion
+- (formal) a group of people or a system that protects a way of life or a belief when it seems that it may disappear
+- a place that military forces are defending
+
+#### jittery
+- (informal) anxious and nervous
+
+#### stool
+- (often in compounds) a seat with legs but with nothing to support your back or arms
+- (medical) a piece of solid waste from your body
+
+#### autopsy
+(plural **autopsies**)
+- an official examination of a dead body by a specially trained doctor in order to discover the cause of death
+
+#### predisposition
+[countable, uncountable] (formal)
+- **predisposition (to/towards something) | predisposition (to do something)** a condition that makes somebody/something likely to behave in a particular way or to suffer from a particular disease
+
+#### reagent
+(chemistry)
+- ​a substance used to cause a chemical reaction, especially in order to find out if another substance is present
+
+#### defecation
+(British English also defaecation)
+[uncountable] (formal)
+- ​the act of getting rid of solid waste from your body through your bowels
+
+#### bowel
+- [countable, usually plural] the tube along which food passes after it has been through the stomach, especially the end where waste is collected before it is passed out of the body
+
+#### deleterious
+(formal) ​
+- harmful and damaging
+
+#### encampment
+- ​a group of tents, huts, etc. where people live together, usually for only a short period of time
+
+
+
+
+
+
+
+
+
+
+
+

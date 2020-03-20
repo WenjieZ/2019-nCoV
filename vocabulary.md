@@ -121,9 +121,14 @@ type of plant/animal/disease
 #### encampment
 - ​a group of tents, huts, etc. where people live together, usually for only a short period of time
 
+#### thereof
+adverb
+(law or formal)
+- of the thing mentioned
 
-
-
+#### depletion
+[uncountable, countable] (formal)
+- the reduction of something by a large amount so that there is not enough left
 
 
 

@@ -21,5 +21,5 @@ Citation
 The State of Homelessness in Canada 2016 report2
 estimated 35 000 people are experiencing homelessness on any given night in Canada.
 
-### Early dynamics of transmission and control of COVID-19: a mathematical modelling study (DOI:https://doi.org/10.1016/S1473-3099(20)30144-4) 3.11
+
 

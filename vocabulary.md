@@ -130,9 +130,15 @@ adverb
 [uncountable, countable] (formal)
 - the reduction of something by a large amount so that there is not enough left
 
+#### hypoxaemia
+(British English)
+(North American English hypoxemia)
+[uncountable] (medical)
+- ​a lower than normal amount of oxygen in the blood
 
-
-
+#### collateral
+[uncountable] (finance)
+- property or something valuable that you promise to give to somebody if you cannot pay back money that you borrow
 
 
 

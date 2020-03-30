@@ -66,14 +66,14 @@
 State-space framework ![](4.png)
 
 - Evidence synthesis
-  -  [^Birrell2018evidence] Surveillance data supplemented by additional serological, demographic, administrative, environmental, or phylogenetic[^Rasmussen2011inference] data  
+  -   [^Birrell2018evidence] Surveillance data supplemented by additional serological, demographic, administrative, environmental, or phylogenetic[^Rasmussen2011inference] data  
   - COVID-19  [^Kucharski2020early]
 - Transmission mechanic
   - Deterministic epidemic dynamic
   - Stochastic epidemic dynamic
 
 ## Trivia
--  [^Siettos2013mathematical] divides the into three categories: ![](5.png)
+-   [^Siettos2013mathematical] divides the into three categories: ![](5.png)
 - large-scale epidemics' random effects in transmission processes can be considered to be well-approximated deterministically [^Kurtz1981approximation]  [^Birrell2018evidence]   [^Siettos2013mathematical]
 - SSM can handle genealogy data — coalescent approach  [^Rasmussen2011inference]
 - Kalman-simplex algorithm can be used to maximize the posterior [^Camacho2015temporal]

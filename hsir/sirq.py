@@ -6,7 +6,7 @@ import plotly.io as pio
 from plotly.subplots import make_subplots
 
 from scipy.optimize import minimize
-from easymh import mh
+# from easymh import mh
 
 from .utils import Id
 from .empirical import Region, Epidemic

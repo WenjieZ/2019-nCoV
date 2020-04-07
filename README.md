@@ -1,53 +1,80 @@
-# COVID-19 Timeline
+HSIR
+=====
+Keywords: epidemiology, compartmental model, state-space model, time-varying, regularization
 
-#### 2019-12-08
-The first known case of an infected patient in Wuhan, a stall operator from the Huanan Seafood Market. 
+Install
+----------
+```
+git clone git@github.com:WenjieZ/2019-nCoV.git
+cd 2019-nCoV
+pip install .
+```
 
-#### 2019-12-31 
-- WHO China Country Office was informed of cases of pneumonia of unknown aetiology in Wuhan City, Hubei Province,
-China
-- 27 cases of **pneumonia**
+Dependency
+----------
+- numpy
+- scipy
+- plotly (version 4)
 
-#### 2020-01-01
-Huanan seafood market closed
+Quick start
+----------
 
-#### 2020-01-03
-44 cases of **virus** pneumonia
+### Simulation
+```python
+from hsir.empirical import Region
+city = Region(990, 10, 0, 0)  # build a region with 990 susceptible, 10 infectious, 0 removed, 0 quarantined
 
-#### 2020-01-05
-59 cases of **virus** pneumonia
+from hsir.sir import SIR
+dynamic = SIR(3, 1, 0.1)  # SIR model (beta=0.3, gamma=0.1)
 
-#### 2020-01-11
-41 cases of **COVID-19** pneumonia
+T = 100  # time horizon
+epidemic = dynamic.estimate(city, T)  # simulate the epidemic
 
-#### 2020-01-16
-41 cases (including two deaths) have been confirmed in Wuhan
-City with three confirmed cases in travellers detected in Thailand (2 cases) and Japan (1 case).
+from hsir.empirical import Sample
+sample = Sample(epidemic, np.arange(T//10, T, T//10), 1000*np.ones(9), 10*np.ones(9), Poi, seed=0)  # sample the epidemic
 
-#### 2020-01-23
-At 2AM, authorities in Wuhan suddenly issued the order to close off the city.
-From 10AM that same day, all public buses, subways, ferries, long-distance buse and other transport services would be suspended; the airport and train stations would be shuttered
+fig = SIR.plot(epidemic)  # visualize the epidemic
+sample.plot(fig)          # visualize the sample
+```
 
-#### 2020-01-24
-Up to noon, a total of 14 cities in Hubei provincee would be brought into the quarantine zone. 35 million people are concerned.
+![](images/1.png)
 
-#### 2020-01-30
-The COVID-19 epidemic was declared a Public Health Emergency of International Concern (PHEIC) by WHO
+### Inference
+```python
+a = InferSIR()  # infer an SIR model
+a.fit(city, sample)  # fit it with the initial condition and the sample
+a.dynamic  # the result is stored in the dynamic field
+```
 
-#### 2020-02-04
-Huoshen Montain Hospital accepted the first patient
+Components
+-----------
 
-#### 2020-02-05
-Wuhan FireEye labortory
+### Models
+- SIR
+- SIRQ
+- SIRt
+- SIRQt
 
-FangCang Hospital
+### Inference
+- InferSIR
+- InferSIRQ
+- InferSIRt
+- InferSIRQt
 
-#### 2020-03-11
-the Director-General of WHO characterised the COVID-19 situation as a pandemic
+### Entities
+- Region
+- Epidemic
+- Sample
+- Confirmed
+- Resisted
 
-#### 2020-03-12
-The USA has suspended all travel from 26 European countries
-
-## Statistics
-- Wuhan International Airport has a catchment population of 19 million individuals
+Citation
+----------
+```bibtex
+@article{zheng2020total,
+  title={Total Variation Regularization for Compartmental Epidemic Models with Time-varying Dynamics},
+  author={Zheng, Wenjie},
+  journal={arXiv preprint arXiv:2004.00412},
+  year={2020}
+```
 

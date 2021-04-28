@@ -21,3 +21,12 @@ A visible suspension of carbon or other particles in air, typically one emitted 
 
 ### Smog - Smog - 烟雾
 Fog or haze combined with smoke and other atmospheric pollutants.
+
+### Dew - Rosée - 露
+Drops of water that form on the ground and other surfaces outside during the night.
+
+### Frost - Givre - 霜
+The thin, white layer of ice that forms when the air temperature is below the freezing point of water, especially outside at night.
+
+### Hail - Grêle - 冰雹
+Small, hard balls of ice that fall from the sky like rain.
